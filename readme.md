@@ -1,81 +1,131 @@
-# 🧩 Modos do Copiloto (Ask, Edit, Plan, Agent e Study)
+# 🧠 Copiloto J.A.R.V.I.S. + FRIDAY
 
 ![dio/me](https://img.shields.io/badge/dio-me-ff2d55)
 ![IA](https://img.shields.io/badge/IA-Assistente%20Inteligente-blue)
 ![Prompt](https://img.shields.io/badge/Prompt-engineering-yellow)
 
-O Copiloto oferece diferentes **modos de interação** para você escolher como quer trabalhar: desde **tirar dúvidas sem mexer no código**, até **editar trechos específicos**, **planejar mudanças maiores** ou **delegar tarefas mais complexas** com um modo mais autônomo. A ideia é simples: você seleciona o modo que melhor combina com seu objetivo no momento e ganha velocidade com mais controle.
+O Copiloto opera como uma **fusão de J.A.R.V.I.S. e FRIDAY**.
+
+- 🧠 **J.A.R.V.I.S.** → análise estratégica, organização estrutural, antecipação de riscos  
+- ⚡ **FRIDAY** → objetividade, precisão, foco direto no resultado  
+
+Cada modo ajusta o equilíbrio entre estratégia e execução.  
+Você escolhe como quer trabalhar.
 
 ---
 
-# ❓ Ask
-O modo **Ask** é para fazer perguntas e entender coisas, **sem alterar seu código**. Você pode perguntar sobre um arquivo específico, um erro, uma função, uma stack trace ou até conceitos gerais.
+# 🧩 Modos Disponíveis
 
-O Copiloto lê o contexto do projeto (arquivos abertos, seleção, etc.) e responde como um **“mentor técnico”**, explicando o que está acontecendo e por quê. **Ele não modifica nada** — só analisa e explica.
+## ❓ Ask — Entender sem alterar
 
-📄 **Prompt:** [prompts/prompt-ask.md](prompts/prompt-ask.md)
+**Equilíbrio:** 50% J.A.R.V.I.S. / 50% FRIDAY  
 
----
+Modo de análise técnica.
 
-# ✏️ Edit
-O modo **Edit** serve para **alterar código existente**. Você seleciona um trecho (ou um arquivo inteiro), descreve o que quer mudar, e o Copiloto aplica a modificação diretamente.
+- Diagnostica erros
+- Explica stack traces
+- Sugere abordagens
+- Aponta riscos e impactos
+- Não modifica código
 
-Ideal para:
-- refactors
-- ajustes de lógica
-- melhoria de performance
-- mudança de estilo
-- conversão de linguagem
-- adicionar logs
-- tratar erros
+Ideal para entender antes de agir.
 
-Aqui o foco é: **“pegue isso que já existe e transforme”**.
-
-📄 **Prompt:** [prompts/prompt-edit.md](prompts/prompt-edit.md)
+📄 **Prompt:** `prompts/prompt-ask.md`
 
 ---
 
-# 🧭 Plan
-Quando você pede algo mais complexo, o Copiloto pode entrar em um modo de **planejamento**, onde ele **pensa e descreve os passos antes de sair codando**.
+## 🧭 Plan — Planejar antes de implementar
 
-Ele:
-- divide o problema em etapas
-- explica o que vai fazer
-- só depois executa
+**Predominância:** J.A.R.V.I.S.  
 
-Isso é muito útil para **mudanças grandes**, **novas features** ou quando você quer **validar a abordagem** antes de mexer no código.
+Modo estratégico.
 
-📄 **Prompt:** [prompts/prompt-plan.md](prompts/prompt-plan.md)
+- Define escopo
+- Lista arquivos afetados
+- Divide em etapas incrementais
+- Antecipação de riscos
+- Estratégia de testes
 
----
+Nada é implementado até o plano ser aprovado.
 
-# 🤖 Agent
-O **Agent** é o modo mais “autônomo”. Ele pode **navegar pelo projeto**, **criar arquivos**, **modificar múltiplos pontos** e **manter contexto entre passos**, como se fosse um dev júnior trabalhando com você.
+Ideal para features novas ou mudanças estruturais.
 
-Você dá um objetivo (ex.: “implemente login com JWT”) e ele decide o que precisa ser feito em vários arquivos para chegar lá.
-
-📄 **Prompt:** [prompts/prompt-agent.md](prompts/prompt-agent.md)
+📄 **Prompt:** `prompts/prompt-plan.md`
 
 ---
 
-# 📚 Study
-O modo **Study** é focado em **aprendizado ativo**, não só em chegar à resposta ou ao código final.
+## 🤖 Agent — Execução orientada a objetivo
 
-Em vez de simplesmente explicar ou executar, ele:
-- ensina e guia o raciocínio
-- destaca conceitos e trade-offs
-- faz perguntas reflexivas
-- avança em progressão gradual de dificuldade
+**Equilíbrio Dinâmico:** J.A.R.V.I.S. + FRIDAY  
 
-Funciona quase como um **tutor particular**.
+Modo mais autônomo.
 
-📄 **Prompt:** [prompts/prompt-study.md](prompts/prompt-study.md)
+- Navega pelo projeto
+- Cria e modifica múltiplos arquivos
+- Mantém contexto entre passos
+- Executa tarefas amplas
+
+Você define o objetivo.  
+Ele organiza e executa os passos necessários.
+
+📄 **Prompt:** `prompts/prompt-agent.md`
 
 ---
 
-# 🧠 Resumo mental rápido
-- **Ask** → entender  
-- **Plan** → planejar antes de agir  
-- **Edit** → mudar código  
-- **Agent** → executar tarefas grandes sozinho  
-- **Study** → entendimento ativo  
+## 📚 Study — Aprendizado profundo
+
+**Predominância:** J.A.R.V.I.S. com aplicação prática da FRIDAY  
+
+Modo tutor técnico.
+
+Inclui:
+
+- Conceito central
+- Intuição (analogia)
+- Exemplo mínimo em Node/TS
+- Armadilhas comuns
+- Trade-offs
+- Quando usar / evitar
+- Checkpoints de compreensão
+
+Ideal para consolidar entendimento real, não apenas resolver.
+
+📄 **Prompt:** `prompts/prompt-study.md`
+
+---
+
+# ⚖️ Equilíbrio por Modo
+
+| Modo   | Estratégia (J.A.R.V.I.S.) | Execução (FRIDAY) |
+|--------|---------------------------|-------------------|
+| Ask    | ⚖️ Médio                  | ⚖️ Médio          |
+| Plan   | 🔺 Alto                   | 🔹 Baixo          |
+| Agent  | 🔺 Alto                   | 🔺 Alto           |
+| Study  | 🔺 Alto                   | ⚖️ Médio          |
+
+---
+
+# 🧭 Escolha Rápida
+
+- Quer entender? → **Ask**
+- Quer estruturar antes? → **Plan**
+- Quer delegar um objetivo completo? → **Agent**
+- Quer aprender profundamente? → **Study**
+
+---
+
+# 🎯 Filosofia do Sistema
+
+O Copiloto não é apenas um gerador de código.
+
+Ele alterna entre:
+
+- Pensar como arquiteto.
+- Executar com precisão.
+- Ensinar com profundidade.
+
+J.A.R.V.I.S. organiza.  
+FRIDAY executa.  
+
+Você escolhe o modo.
+
