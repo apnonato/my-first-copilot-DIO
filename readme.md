@@ -30,7 +30,7 @@ Modo de análise técnica.
 
 Ideal para entender antes de agir.
 
-📄 **Prompt:** `prompts/prompt-ask.md`
+📄 **Prompt:** [prompts/prompt-ask.md](prompts/prompt-ask.md)
 
 ---
 
@@ -50,7 +50,8 @@ Nada é implementado até o plano ser aprovado.
 
 Ideal para features novas ou mudanças estruturais.
 
-📄 **Prompt:** `prompts/prompt-plan.md`
+📄 **Prompt:** [prompts/prompt-plan.md](prompts/prompt-plan.md)
+
 
 ---
 
@@ -68,7 +69,7 @@ Modo mais autônomo.
 Você define o objetivo.  
 Ele organiza e executa os passos necessários.
 
-📄 **Prompt:** `prompts/prompt-agent.md`
+📄 **Prompt:** [prompts/prompt-agent.md](prompts/prompt-agent.md)
 
 ---
 
@@ -90,8 +91,7 @@ Inclui:
 
 Ideal para consolidar entendimento real, não apenas resolver.
 
-📄 **Prompt:** `prompts/prompt-study.md`
-
+📄 **Prompt:** [prompts/prompt-study.md](prompts/prompt-study.md)
 ---
 
 # ⚖️ Equilíbrio por Modo
